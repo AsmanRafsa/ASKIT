@@ -43,12 +43,14 @@ p {
   flex-direction: row;
 }
 .main__items__one {
+  background: transparent;
+  box-shadow: 0 0 5px;
   height: 20vh;
   width: 20vh;
   border-radius: 5px;
   padding: 1em;
   text-align: center;
-  background-color: rgb(230, 186, 230);
+  background-color: rgb(130, 70, 143);
 }
 .main__items__one img {
   margin-top: -2em;
@@ -109,7 +111,7 @@ main button {
   gap: 1em;
 }
 
-body {
+body form {
   height: 100vh;
 }
 body form input {
@@ -119,8 +121,23 @@ body form input {
   flex-direction: row;
   outline: none;
   border-radius: 5px;
-  background-color: white;
+  border: none;
+  background: transparent;
   width: 30vw;
   padding: 2em;
   margin: 0 auto;
+  box-shadow: 0 0 3px plum;
+}
+
+.chat__button {
+  background-color: rgb(123, 0, 123);
+  color: white;
+  border-radius: 5px;
+  padding: 1em 3em;
+  border: none;
+  font-size: 1rem;
+  display: block;
+  margin: 4em auto;
+  cursor: pointer;
+  font-weight: bold;
 }

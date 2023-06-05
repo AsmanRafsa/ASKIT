@@ -9,20 +9,22 @@
     }
     // margin: 1em 2em;
     &__one {
-        img{
-            margin-top: -2em;
-        }
+      img {
+        margin-top: -2em;
+      }
+      background: transparent;
+      box-shadow: 0 0 5px ;
       height: 20vh;
       width: 20vh;
       border-radius: 5px;
       padding: 1em;
       text-align: center;
-      background-color: rgb(230, 186, 230);
+      background-color: rgb(130, 70, 143);
     }
     &__two {
-        img{
-            margin-top: -2em;
-        }
+      img {
+        margin-top: -2em;
+      }
       height: 20vh;
       width: 20vh;
       border-radius: 5px;
@@ -32,13 +34,13 @@
       background-color: rgb(230, 186, 230);
     }
     &__three {
-        &__image{
-            background-color:  rgb(230, 186, 230);
-        }
-        img{
-            margin-top: -2em;
-            background-color:  rgb(230, 186, 230);;
-        }
+      &__image {
+        background-color: rgb(230, 186, 230);
+      }
+      img {
+        margin-top: -2em;
+        background-color: rgb(230, 186, 230);
+      }
       height: 20vh;
       width: 20vh;
       border-radius: 5px;

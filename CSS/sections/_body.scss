@@ -2,16 +2,22 @@
 @use "../utilities/mixins" as *;
 body {
 
-    height: 100vh;
-  form {
+    form {
+      height: 100vh;
       input {
       @include flex(center, center);
       outline: none;
       border-radius: 5px;
-      background-color: white;
+    //   background-color: white;
+    border: none;
+    background: transparent;
       width: 30vw;
       padding: 2em;
       margin: 0 auto;
+      box-shadow: 0 0 3px plum;
     }
   }
+}
+.chat__button{
+    @include button;
 }
