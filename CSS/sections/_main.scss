@@ -1,0 +1,55 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+.main {
+  &__items {
+    height: 90vh;
+    @include flex(center, center, column);
+    &__container {
+      @include flex(center, center);
+    }
+    // margin: 1em 2em;
+    &__one {
+        img{
+            margin-top: -2em;
+        }
+      height: 20vh;
+      width: 20vh;
+      border-radius: 5px;
+      padding: 1em;
+      text-align: center;
+      background-color: rgb(230, 186, 230);
+    }
+    &__two {
+        img{
+            margin-top: -2em;
+        }
+      height: 20vh;
+      width: 20vh;
+      border-radius: 5px;
+      padding: 1em;
+      margin: 0 2em;
+      text-align: center;
+      background-color: rgb(230, 186, 230);
+    }
+    &__three {
+        &__image{
+            background-color:  rgb(230, 186, 230);
+        }
+        img{
+            margin-top: -2em;
+            background-color:  rgb(230, 186, 230);;
+        }
+      height: 20vh;
+      width: 20vh;
+      border-radius: 5px;
+      padding: 1em;
+      text-align: center;
+      background-color: rgb(230, 186, 230);
+    }
+  }
+}
+main {
+  button {
+    @include button;
+  }
+}

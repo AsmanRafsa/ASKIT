@@ -1,0 +1,20 @@
+@use "./variables" as *;
+@mixin flex($justify, $align, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+@mixin button {
+  // font-family: $font;
+  background-color: rgb(123, 0, 123);
+  color: white;
+  border-radius: 5px;
+  padding: 1em 3em;
+  border: none;
+  font-size: 1rem;
+  display: block;
+  margin: 4em auto;
+  cursor: pointer;
+  font-weight: bold;
+}

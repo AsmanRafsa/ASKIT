@@ -1,0 +1,17 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+body {
+
+    height: 100vh;
+  form {
+      input {
+      @include flex(center, center);
+      outline: none;
+      border-radius: 5px;
+      background-color: white;
+      width: 30vw;
+      padding: 2em;
+      margin: 0 auto;
+    }
+  }
+}

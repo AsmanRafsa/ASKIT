@@ -1,0 +1,29 @@
+@use "./variables" as *;
+body {
+    background-image: url(../../images/_.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+//   background-color:$black;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+ul{
+    li{
+        list-style: none;
+    }
+}
+a{
+    color: $white;
+    text-decoration: none;
+}
+p{
+    color: $white;
+}

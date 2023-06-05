@@ -1,0 +1,16 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+.nav {
+  &__right {
+    @include flex(flex-end,center);
+    gap: 1em;
+    
+    &__setting{
+@include flex(flex-start,center);
+gap: 1em;
+    }
+// &__:nth-child(2){
+//     padding-left: 1em;
+// }
+  }
+}
