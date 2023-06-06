@@ -7,7 +7,7 @@
 }
 @mixin button {
   // font-family: $font;
-  background-color: rgb(123, 0, 123);
+  background-color: $verydark-purple;
   color: white;
   border-radius: 5px;
   padding: 1em 3em;
@@ -18,3 +18,20 @@
   cursor: pointer;
   font-weight: bold;
 }
+@mixin buttons {
+    // font-family: $font;
+    background-color: $verydark-purple;
+    color: white;
+    padding: 1.7em 3em;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  

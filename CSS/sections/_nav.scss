@@ -1,16 +1,36 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
+nav {
+  background-color: $light-purple;
+  //   margin: auto;
+}
 .nav {
+  &__container{
+    @include flex(space-between,center);
+    padding:2em 0;
+  }
   &__right {
-    @include flex(flex-end,center);
+    // margin-bottom: 0.5em;
+    cursor: pointer;
+    @include flex(flex-end, center);
     gap: 1em;
-    
-    &__setting{
-@include flex(flex-start,center);
-gap: 1em;
+    &__update {
+      text-align: center;
+      @include flex(flex-end, center);
+      gap: 0.5em;
+      background-color: $dark-purple;
+      padding: 1em;
+      border-radius: 3px;
     }
-// &__:nth-child(2){
-//     padding-left: 1em;
-// }
+    &__setting {
+      @include flex(flex-start, center);
+      gap: 1em;
+      background-color: $dark-purple;
+      padding: 1em;
+      border-radius: 3px;
+    }
+    // &__:nth-child(2){
+    //     padding-left: 1em;
+    // }
   }
 }

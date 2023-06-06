@@ -1,57 +1,78 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
+body {
+  background-color: $black;
+}
 .main {
   &__items {
+    font-size: 1rem;
     height: 90vh;
     @include flex(center, center, column);
+    &__image {
+      display: block;
+      margin: 0 auto;
+      width: 80px;
+      height: 80px;
+      margin-top: -3em;
+      padding-top: 0.8em;
+      background-color: $verylight-purple;
+      border-radius: 50%;
+    }
     &__container {
       @include flex(center, center);
     }
     // margin: 1em 2em;
     &__one {
-      img {
-        margin-top: -2em;
-      }
+    //   &__image {
+    //     // img {
+    //     //   margin-top: -2em;
+    //     // }
+    //   }
       background: transparent;
-      box-shadow: 0 0 5px ;
-      height: 20vh;
+      box-shadow: 0 0 5px grey;
+      height: 18vh;
       width: 20vh;
       border-radius: 5px;
       padding: 1em;
       text-align: center;
-      background-color: rgb(130, 70, 143);
+      background-color: $verylight-purple;
     }
     &__two {
-      img {
-        margin-top: -2em;
-      }
-      height: 20vh;
+      //   img {
+      //     margin-top: -2em;
+      //   }
+      background: transparent;
+      box-shadow: 0 0 5px grey;
+      height: 18vh;
       width: 20vh;
       border-radius: 5px;
       padding: 1em;
-      margin: 0 2em;
       text-align: center;
-      background-color: rgb(230, 186, 230);
+      background-color: $verylight-purple;
+      margin: 0 2em;
     }
     &__three {
-      &__image {
-        background-color: rgb(230, 186, 230);
-      }
-      img {
-        margin-top: -2em;
-        background-color: rgb(230, 186, 230);
-      }
-      height: 20vh;
+      //   &__image {
+      //     // background-color: rgb(230, 186, 230);
+      //   }
+      //   img {
+      //     margin-top: -2em;
+      //     // background-color: rgb(230, 186, 230);
+      //   }
+      background: transparent;
+      box-shadow: 0 0 5px grey;
+      height: 18vh;
       width: 20vh;
       border-radius: 5px;
       padding: 1em;
       text-align: center;
-      background-color: rgb(230, 186, 230);
+      background-color: $verylight-purple;
     }
   }
 }
 main {
   button {
     @include button;
+    font-family: $font;
   }
 }

@@ -1,9 +1,10 @@
 @use "./variables" as *;
 body {
-    background-image: url(../../images/_.jpeg);
+    // background-image: url(../../images/_.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: $font;
 //   background-color:$black;
 }
 * {
@@ -25,5 +26,9 @@ a{
     text-decoration: none;
 }
 p{
+    color: $white;
+    // margin-top: 1em;
+}
+h2{
     color: $white;
 }
