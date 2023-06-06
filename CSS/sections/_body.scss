@@ -2,6 +2,7 @@
 @use "../utilities/mixins" as *;
 body {
   font-family: $font;
+  .chat__items{
   form {
     @include flex(center, center);
     background-color: black;
@@ -25,6 +26,7 @@ body {
       box-shadow: 0 0 10px white;
     }
   }
+}
 }
 .chat__button {
   @include buttons;

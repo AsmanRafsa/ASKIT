@@ -34,6 +34,10 @@ h2 {
   color: #fff;
 }
 
+h1 {
+  color: #fff;
+}
+
 body {
   background-color: #000;
 }
@@ -152,7 +156,7 @@ nav {
 body {
   font-family: "Jost", sans-serif;
 }
-body form {
+body .chat__items form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,7 +164,7 @@ body form {
   background-color: black;
   height: 100vh;
 }
-body form input {
+body .chat__items form input {
   font-family: "Jost", sans-serif;
   font-size: 1rem;
   color: white;
