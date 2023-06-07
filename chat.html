@@ -19,7 +19,8 @@
       <div class="container">
         <div class="nav__container">
         <div class="nav__left">
-          <img src="images/logo.png" alt="Askit logo" width="50">
+          <!-- <img src="images/logo.png" alt="Askit logo" width="50"> -->
+          <h1>LOGO</h1>
         </div>
         <div class="nav__right">
           <div class="nav__right__setting">
@@ -27,7 +28,7 @@
             <h2>Setting</h2>
           </div>
           <div class="nav__right__update">
-          <h2>Updates</h2>
+          <h2>History</h2>
           <i class="fa-solid fa-bars"></i>
         </div>
         </div>
@@ -36,11 +37,15 @@
       </nav>
       <div class="chat__items">
     <form>
+      <div class="chat__items__flex">
       <div class="form__items">
-      <input type="text" placeholder="start a chat" />
-      <button class="chat__button">Chat</button>
+      <input type="text" placeholder="start a chat" id="input"/>
+      <button class="chat__button" id="chat">Chat</button>
+      </div>
+      <div id="reply"></div>
       </div>
     </form>
     </div>
+    <script src="JS/app.js"></script>
   </body>
 </html>
