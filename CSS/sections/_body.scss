@@ -2,35 +2,35 @@
 @use "../utilities/mixins" as *;
 body {
   font-family: $font;
-  .chat__items{
-    &__flex{
-      @include flex-col(center,center);
+  .chat__items {
+    &__flex {
+      @include flex-col(center, center);
       text-align: justify;
     }
-  form {
-    @include flex(center, center);
-    // background-color: black;
-    height: 90vh;
-    input {
-      font-family: $font;
-      font-size: 1rem;
-      color: white;
-      //   outline: none;
-      border-radius: 5px;
-      border-top-right-radius: 0;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 0;
-      border-top-left-radius: 5px;
-      border: none;
-      outline: none;
-      background: transparent;
-      width: 50vw;
-      padding: 1.5em;
-      margin: 0 auto;
-      box-shadow: 0 0 10px white;
+    form {
+      @include flex(center, flex-end);
+      // background-color: black;
+      height: 50vh;
+      input {
+        font-family: $font;
+        font-size: 1rem;
+        color: white;
+        //   outline: none;
+        border-radius: 5px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 5px;
+        border: none;
+        outline: none;
+        background: transparent;
+        width: 50vw;
+        padding: 1.5em;
+        margin: 0 auto;
+        box-shadow: 0 0 10px white;
+      }
     }
   }
-}
 }
 .chat__button {
   @include buttons;
@@ -40,4 +40,20 @@ body {
   &__items {
     @include flex(center, center);
   }
+}
+#exModal:hover {
+  background-color: $light-purple;
+  border-radius: 50%;
+  padding: 0.3em;
+  // text-align: center;
+}
+#reply{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.text-bold{
+  font-weight: bold;
 }

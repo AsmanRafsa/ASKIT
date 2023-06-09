@@ -18,33 +18,60 @@
     <nav>
       <div class="container">
         <div class="nav__container">
-        <div class="nav__left">
-          <!-- <img src="images/logo.png" alt="Askit logo" width="50"> -->
-          <h1>LOGO</h1>
-        </div>
-        <div class="nav__right">
-          <div class="nav__right__setting">
-            <i class="fa-regular fa-sun"></i>
-            <h2>Setting</h2>
+          <div class="nav__left">
+            <img src="images/logo.png" alt="Askit logo" width="50" />
+            <!-- <h1>LOGO</h1> -->
           </div>
-          <div class="nav__right__update">
-          <h2>History</h2>
-          <i class="fa-solid fa-bars"></i>
-        </div>
+          <div class="nav__right">
+            <div class="nav__right__setting" id="mode-setting">
+              <i class="fa-regular fa-sun" id=""></i>
+              <h2>Setting</h2>
+            </div>
+
+            <div class="nav__right__modal" id="themeSwitcher">
+              <i class="fa-solid fa-xmark" id="exModal"></i>
+              <h3>Change Theme</h3>
+              <div>
+                <input type="radio" name="Theme" id="default" />
+                <label for="default">Default</label>
+              </div>
+              <div>
+                <input type="radio" name="Theme" id="dark" />
+                <label for="dark">Dark Mode</label>
+              </div>
+              <div>
+                <input type="radio" name="Theme" id="light" />
+                <label for="light">Light mode</label>
+              </div>
+              <h3>Change Font</h3>
+              <select name="" id="selectFont">
+                <option value="" id="optionFont">'Jost', sans-serif</option>
+                <option value="" id="optionFont">'Courier New', Courier, monospace</option>
+                <option value="" id="optionFont">
+                  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+                </option>
+                <option value="">'Times New Roman', Times, serif</option>
+              </select>
+            </div>
+
+            <div class="nav__right__update">
+              <h2>History</h2>
+              <i class="fa-regular fa-clock"></i>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
-      </nav>
-      <div class="chat__items">
-    <form>
-      <div class="chat__items__flex">
-      <div class="form__items">
-      <input type="text" placeholder="start a chat" id="input"/>
-      <button class="chat__button" id="chat">Chat</button>
-      </div>
+    <div class="chat__items">
       <div id="reply"></div>
-      </div>
-    </form>
+      <form>
+        <div class="chat__items__flex">
+          <div class="form__items">
+            <input type="text" placeholder="start a chat" id="input" class="inputTheme"/>
+            <button type="submit" class="chat__button" id="chat">Chat</button>
+          </div>
+        </div>
+      </form>
     </div>
     <script src="JS/app.js"></script>
   </body>
