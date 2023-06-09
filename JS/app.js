@@ -19,6 +19,52 @@ const optionFont = document.getElementById("optionFont");
 // const itemThree = document.getElementById("itemThree");
 
 custom.addEventListener("click", function () {
+
+  if(document.querySelectorAll(".reply").length>0){
+
+    
+    
+    document.querySelectorAll(".reply").forEach(item=>{
+      
+  item.style.color = "black";
+  item.style.marginLeft = "10em";
+  item.style.width = "30vw";
+  item.style.padding = "1em";
+  // item.style.margin = "1em auto";
+  item.style.backgroundColor = "plum";
+  item.style.borderRadius = "10px";
+    })
+  
+    document.querySelectorAll(".question").forEach(item=>{
+  
+      item.style.color = "black";
+      item.style.textAlign = "left";
+      item.style.width = "30vw";
+      item.style.padding = "1em";
+      item.style.margin = "1em";
+      item.style.backgroundColor = "white";
+      item.style.borderRadius = "10px";
+    })
+}
+  
+
+  document.querySelectorAll(".reply").forEach(item=>{
+
+  // replyItem.style.margin = "1em auto";
+  item.style.backgroundColor = "plum";
+  item.style.borderRadius = "10px";
+  })
+
+  document.querySelectorAll(".question").forEach(item=>{
+    questionItem.style.color = "black";
+    // questionItem.style.border = "3px solid red"
+    questionItem.style.textAlign = "left";
+    questionItem.style.width = "30vw";
+    questionItem.style.padding = "1em";
+    questionItem.style.margin = "1em";
+    questionItem.style.backgroundColor = "white";
+    questionItem.style.borderRadius = "10px";
+  })
   // alert("hello");
   bodyTheme.style.backgroundColor = "black";
   navigation.style.backgroundColor = "plum";
@@ -26,23 +72,42 @@ custom.addEventListener("click", function () {
   navRightHistory.style.backgroundColor = "rgba(191, 36, 176, 0.3)";
   buttonTheme.style.backgroundColor = "rgb(123, 0, 123)";
   inputTheme.style.boxShadow = " 0 0 5px white";
-  replyItem.style.color = "black";
-  replyItem.style.marginLeft = "10em";
-  replyItem.style.width = "30vw";
-  replyItem.style.padding = "1em";
+
   // replyItem.style.margin = "1em auto";
   replyItem.style.backgroundColor = "plum";
   replyItem.style.borderRadius = "10px";
-  questionItem.style.color = "black";
-  // questionItem.style.border = "3px solid red"
-  questionItem.style.textAlign = "left";
-  questionItem.style.width = "30vw";
-  questionItem.style.padding = "1em";
-  questionItem.style.margin = "1em";
-  questionItem.style.backgroundColor = "white";
-  questionItem.style.borderRadius = "10px";
+
 });
 lightMode.addEventListener("click", function () {
+
+
+  if(document.querySelectorAll(".reply").length>0){
+
+    
+    
+    document.querySelectorAll(".reply").forEach(item=>{
+      
+  item.style.color = "black";
+  item.style.marginLeft = "10em";
+  item.style.width = "30vw";
+  item.style.padding = "1em";
+  // item.style.margin = "1em auto";
+  item.style.backgroundColor = "plum";
+  item.style.borderRadius = "10px";
+    })
+  
+    document.querySelectorAll(".question").forEach(item=>{
+  
+      item.style.color = "white";
+      item.style.textAlign = "left";
+      item.style.width = "30vw";
+      item.style.padding = "1em";
+      item.style.margin = "1em";
+      item.style.backgroundColor = "black";
+      item.style.borderRadius = "10px";
+    })
+}
+  
   // alert("hello");
   bodyTheme.style.backgroundColor = "white";
   navigation.style.backgroundColor = "plum";
@@ -51,20 +116,6 @@ lightMode.addEventListener("click", function () {
   buttonTheme.style.backgroundColor = "rgb(123,0,123)";
   inputTheme.style.boxShadow = "0 0 5px purple";
 
-  replyItem.style.color = "black";
-  replyItem.style.marginLeft = "10em";
-  replyItem.style.width = "30vw";
-  replyItem.style.padding = "1em";
-  // replyItem.style.margin = "1em auto";
-  replyItem.style.backgroundColor = "plum";
-  replyItem.style.borderRadius = "10px";
-  questionItem.style.color = "white";
-  questionItem.style.textAlign = "left";
-  questionItem.style.width = "30vw";
-  questionItem.style.padding = "1em";
-  questionItem.style.margin = "1em";
-  questionItem.style.backgroundColor = "black";
-  questionItem.style.borderRadius = "10px";
   
   // replyItem.style.color = "black";
   // replyItem.style.marginLeft = "10em";
@@ -84,26 +135,41 @@ lightMode.addEventListener("click", function () {
 });
 
 darkMode.addEventListener("click", function () {
+  
+  if(document.querySelectorAll(".reply").length>0){
+
+    
+    
+      document.querySelectorAll(".reply").forEach(item=>{
+        item.style.color = "white";
+        item.style.marginLeft = "10em";
+        item.style.width = "30vw";
+        item.style.padding = "1em";
+        // item.style.margin = "1em auto";
+        item.style.backgroundColor = "grey";
+        item.style.borderRadius = "10px";
+      })
+    
+      document.querySelectorAll(".question").forEach(item=>{
+    
+        item.style.color = "black";
+        item.style.textAlign = "left";
+        item.style.width = "30vw";
+        item.style.padding = "1em";
+        item.style.margin = "1em";
+        item.style.backgroundColor = "white";
+        item.style.borderRadius = "10px";
+      })
+  }
+
+console.log(document.querySelectorAll(".reply") )
   // alert("hello");
   bodyTheme.style.backgroundColor = "black";
   navigation.style.backgroundColor = "grey";
   navRightSetting.style.backgroundColor = "rgba(0,0,0,0.3)";
   navRightHistory.style.backgroundColor = "rgba(0,0,0,0.3)";
   buttonTheme.style.backgroundColor = "grey";
-  replyItem.style.color = "white";
-  replyItem.style.marginLeft = "10em";
-  replyItem.style.width = "30vw";
-  replyItem.style.padding = "1em";
-  // replyItem.style.margin = "1em auto";
-  replyItem.style.backgroundColor = "grey";
-  replyItem.style.borderRadius = "10px";
-  questionItem.style.color = "black";
-  questionItem.style.textAlign = "left";
-  questionItem.style.width = "30vw";
-  questionItem.style.padding = "1em";
-  questionItem.style.margin = "1em";
-  questionItem.style.backgroundColor = "white";
-  questionItem.style.borderRadius = "10px";
+
   // itemTwo.style.backgroundColor = "grey";
   // itemThree.style.backgroundColor = "grey";
 });
@@ -122,6 +188,10 @@ modalSetting.addEventListener("click", function () {
 // console.log(inputTheme);
 
 const fetchResponse = (e) => {
+  const replyItem = document.createElement("p");
+  replyItem.classList.add("reply");
+const questionItem = document.createElement("p");
+questionItem.classList.add("question");
   const chatInput = document.getElementById("input");
   e.preventDefault();
   const body = {
@@ -137,7 +207,7 @@ const fetchResponse = (e) => {
     method: "POST",
     headers: {
       Authorization:
-        "Bearer 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",
+        "Bearer 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",
       "Content-Type": "application/json",
     },
     body: JSON.stringify(body),

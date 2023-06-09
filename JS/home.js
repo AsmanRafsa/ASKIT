@@ -24,7 +24,6 @@ modalSetting.addEventListener("click", function () {
 });
 
 custom.addEventListener("click", function () {
-  // alert("hello");
   bodyTheme.style.backgroundColor = "black";
   navigation.style.backgroundColor = "plum";
   navRightSetting.style.backgroundColor = "rgba(191, 36, 176, 0.3)";
@@ -36,10 +35,8 @@ custom.addEventListener("click", function () {
   itemOne.style.backgroundColor = "rgb(123, 0, 123)";
   itemTwo.style.backgroundColor = "rgb(123, 0, 123)";
   itemThree.style.backgroundColor = "rgb(123, 0, 123)";
-  // inputTheme.style.boxShadow = " 0 0 5px white";
 });
 lightMode.addEventListener("click", function () {
-  // alert("hello");
   bodyTheme.style.backgroundColor = "white";
   navigation.style.backgroundColor = "plum";
   navRightSetting.style.backgroundColor = "rgba(191, 36, 176, 0.3)";
@@ -54,7 +51,6 @@ lightMode.addEventListener("click", function () {
 });
 
 darkMode.addEventListener("click", function () {
-  // alert("hello");
   bodyTheme.style.backgroundColor = "black";
   navigation.style.backgroundColor = "grey";
   navRightSetting.style.backgroundColor = "rgba(0,0,0,0.3)";
@@ -67,7 +63,3 @@ darkMode.addEventListener("click", function () {
   itemTwo.style.backgroundColor = "grey";
   itemThree.style.backgroundColor = "grey";
 });
-
-// selectFont.addEventListener("click", function () {
-//   optionFont.style.font = "'Courier New', Courier, monospace'";
-// });
